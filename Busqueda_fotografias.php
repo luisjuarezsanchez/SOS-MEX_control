@@ -4,6 +4,11 @@
 	<title>Busqueda</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<!-- 
+		Autor: Stephanie Santana
+		Fecha 08/11/21
+		Desc: Estilos a utilizar en la interfaz
+	-->
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/estilo_busqueda_usuario.css">180	
@@ -12,6 +17,12 @@
 <body>
 	<header>
 		<div class="contenedor">
+			<!-- 
+				Autor: Stephanie Santana
+				Fecha 08/11/21
+				Desc: Barra "estatica" con logo y menú desplehable de 3 lineas horizontales 
+				con hipervinculos a las redes
+			 -->
 			<h1 class="icon-eye">SOS-MEX</h1>
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"></label>
@@ -31,8 +42,8 @@
 		<br/>
 		<section id="bienvenidos">
 			<br>
-			<h2>Identificar a quien estas buscando</h2>
-			<p>A continuacion estas viendo los datos de las personas registradas</p>
+			<h2>Si logras identificar a quien estas buscando</h2>
+			<p>Debajo de la fotografía aparece su nombre y hospital de traslado</p>
 		</section>
 
 		<center>
@@ -42,6 +53,11 @@
 						<tr>
 							<th colspan="11"><a href="Registro.php">Insertar registro</a></th>
 						</tr>
+						<!-- 
+							Autor: Stephanie Santana
+							Fecha 08/11/21
+							Desc: Diseño de la tabla que se mostrar al usuario
+					 	-->
 						<th> ID </th>
 						<th> Nombre </th>
 						<th> Apellidos </th>
@@ -57,6 +73,12 @@
 				<tbody>
 					<?php
 						include("db.php");
+						/*
+							Autor: Stephanie Santana
+							Fecha: 08/11/21
+							Desc: Conexión a bd, se muestra TODA la tabla, en el orden en el cual fueron
+								  ingresados los registros
+						*/
 						$query = "SELECT * FROM tabla_imagen";
 						$resultado = $conexion->query($query);
 						while($row = $resultado->fetch_assoc()){
@@ -86,6 +108,11 @@
 	</main>
 
 	<footer>
+		<!-- 
+			Autor: Stephanie Santana
+			Fecha 08/11/21
+			Desc: Pie de página "estatico" con hipervinculo a las redes sociales
+		-->
 		<div class="contenedor">
 			<p class="copy">SOS-MEX &copy; 2021</p>
 			<div class="sociales">

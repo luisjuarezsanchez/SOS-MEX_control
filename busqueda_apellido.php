@@ -4,6 +4,11 @@
 	<title>Busqueda</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<!-- 
+		Autor: Stephanie Santana
+		Fecha 08/11/21
+		Desc: Estilos a utilizar en la interfaz
+	-->
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/estilo_busqueda_usuario.css">
@@ -12,6 +17,12 @@
 <body>
 	<header>
 		<div class="contenedor">
+			<!-- 
+				Autor: Stephanie Santana
+				Fecha 08/11/21
+				Desc: Barra "estatica" con logo y menú desplehable de 3 lineas horizontales 
+				con hipervinculos a las redes
+			 -->
 			<h1 class="icon-eye">SOS-MEX</h1>
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"></label>
@@ -38,6 +49,11 @@
 		<center>
 			<table border="1">
 				<thead>
+					<!-- 
+						Autor: Stephanie Santana
+						Fecha 08/11/21
+						Desc: Diseño de la tabla que se mostrar al usuario
+					 -->
 					<tr>
 						<th> ID </th>
 						<th> Nombre </th>
@@ -53,11 +69,23 @@
 				<tbody>
 					<?php
 						include("db.php");
+						/*
+							Autor: Stephanie Santana
+							Fecha: 08/11/21
+							Desc: Conexión a bd
+									Se realiza el filtro
+									Se muentran los resultados
+						*/
 						$query = "SELECT * FROM tabla_imagen WHERE nombre='$nombre'";
 						$resultado = $conexion->query($query);
 						while($row = $resultado->fetch_assoc()){
 					?>
 					<tr>
+						<!-- 
+							Autor: Stephanie Santana
+							Fecha: 08/11/21
+							Desc: Diseño de la tabla y el contedido por fila/columna y campo segun el ID
+						 -->
 						<td><?php echo $row ['id'] ?> </td>
 						<td><?php echo $row ['nombre'] ?> </td>
 						<td><?php echo $row ['apellidos'] ?> </td>
@@ -80,7 +108,13 @@
 	</main>
 
 	<footer>
+		<!-- 
+			Autor: Stephanie Santana
+			Fecha 08/11/21
+			Desc: Pie de página "estatico" con hipervinculo a las redes sociales
+		-->
 		<div class="contenedor">
+
 			<p class="copy">SOS-MEX &copy; 2021</p>
 			<div class="sociales">
 				<a class="icon-facebook" target="_blank" href="https://www.facebook.com/Sos-Mex-100416508942788"></a>
@@ -89,7 +123,6 @@
 			</div>
 		</div>
 	</footer>
-	
 
 </body>
 </html>

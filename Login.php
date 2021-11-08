@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<!--
-#Autor: Stephanie
-#Fecha: Junio 2021
-# Interfaz de la pagina que contiene un formulario de validacion de brigadistas, aqui se emplea el metodo POST para el envio de informacion
--->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 	<title>Login para miembros</title>
+	<!-- 
+		Autor: Stephanie Santana
+		Fecha 10/10/21
+		Desc: Estilos a utilizar en la interfaz
+	-->
 	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/estilos.css">
@@ -16,10 +16,20 @@
 <body>
 	<header>
 		<div class="contenedor">
+			<!-- 
+				Autor: Stephanie Santana
+				Fecha 10/10/21
+				Desc: Barra de menú con logo 
+			-->
 			<h1 class="icon-eye">SOS-MEX</h1>
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"></label>
 			<nav class="menu">
+				<!-- 
+					Autor: Stephanie Santana
+					Fecha 10/10/21
+					Desc: Menu despleable de 3 barras horizontales con hipervinculos
+				 -->
 				<a href="index.php">Inicio</a>
 				<a target="_blank" href="https://www.facebook.com/Sos-Mex-100416508942788">Facebook</a>
 				<a target="_blank" href="https://twitter.com/mex_sos">Twitter</a>
@@ -27,12 +37,16 @@
 			</nav>
 		</div>
 	</header>
-	<!--
-	#Autor: Stephanie
-	#Fecha: Junio 2021
-	#Programacion del formulario, invicacion del metodo POST para su respectiva validacion en validar.php
-	-->
+
 	<section class="form-login">
+		<!-- 
+			Autor: Stephanie Santana
+			Fecha 10/10/21
+			Desc: Formulario para verificar la existencia del brigadista, se manda a
+					validar.php donde se hace conexión con la bd
+					opcion de olvidaste tu contraseña -> abre un correo digido al correo 
+					del proyecto para solicitar un cambio de contraseña
+		 -->
 		<form action="validar.php" method="post">
 			<h5>Iniciar sesión como brigadista</h5>
 			<input class=controls type="text" name="usuario" value="" placeholder="Digita tu usuario">
@@ -42,12 +56,14 @@
 			<p><a href="mailto:SOSxMEX@gmail.com">¿Olvidaste tu contraseña?</a></p>
 		</form>
 	</section>
-	<!--
-	#Autor: Evelyn
-	#Fecha: Junio 2021
-	# Codigo para el pie de pagina de la pagina principal
-	-->	
+
+
 		<footer>
+			<!-- 
+				Autor: Stephanie Santana
+				Fecha 09/10/21
+				Desc: Pie de página "estatico" con hipervinculo a las redes sociales
+			-->
 			<br/>
 			<br/>
 			<br/>
@@ -60,5 +76,6 @@
 			</div>
 		</div>
 	</footer>
+
 </body>
 </html>

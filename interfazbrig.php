@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<!--
-#Autor: Evelyn
-#Fecha: Junio 2021
-# Pagina principal que muestra la interfaz de los brigadistas una vez que han iniciado sesion con sus credenciales de acceso
--->
 <head>
 	<title>Busqueda</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<!-- 
+		Autor: Stephanie Santana
+		Fecha 09/10/21
+		Desc: Estilos a utilizar en la interfaz
+	-->
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -16,10 +16,20 @@
 <body>
 	<header>
 		<div class="contenedor">
+			<!-- 
+				Autor: Stephanie Santana
+				Fecha 09/10/21
+				Desc: Barra de menú con logo 
+			-->
 			<h1 class="icon-eye">SOS-MEX</h1>
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"></label>
 			<nav class="menu">
+				<!-- 
+					Autor: Stephanie Santana
+					Fecha 09/10/21
+					Desc: Menu despleable de 3 barras horizontales con hipervinculos
+				 -->
 				<a href="index.php">Inicio</a>
 				<a target="_blank" href="https://www.facebook.com/Sos-Mex-100416508942788">Facebook</a>
 				<a target="_blank" href="https://twitter.com/mex_sos">Twitter</a>
@@ -33,11 +43,8 @@
 		<br/>
 		<br/>
 		<br/>
-		 <!--
-		#Autor: Luis Jair
-		#Fecha: Junio 2021
-		# Acciones para brigadistas, unicamente se coloca la ruta de acceso de cada uno de los PHP correspondientes segun su imagen y accion
-		-->
+
+			
 		<section id="bienvenidos">
 			<br/>
 			<br/>
@@ -45,10 +52,23 @@
 		</section>
 
 		<section id="blog">
+			<!-- 
+				Autor: Stephanie Santana
+				Fecha 09/10/21
+				Desc: Sección para decidir que hacer como brigadista
+					Dar de alta -> Registro.php es la interfaz donde se registra la victima 
+									SOLO se puede acceder a esta como brigadista
+					ChatBot -> chatbotb.php Lleva a la ayuda asistida con IA para los brigadistas
+					Ver registros -> Busqueda_fotografias.php Muestra todos los registros realizados
+									pero tiene la función de:
+										*Editar
+										*Elimar
+										*Agregar 
+			-->
 			<div class="contenedor">
 				<article>
 					<a href="Registro.php"><img src="img/daralta.png" width="400" height="250"/a>
-					<h4>Darde alta daminificados</h4>
+					<h4>Dar de alta daminificado</h4>
 				</article>				
 
 				<article>
@@ -64,13 +84,16 @@
 				</article>				
 			</div>
 		</section>
+
+		
 	</main>
-	<!--
-	#Autor: Evelyn
-	#Fecha: Junio 2021
-	# Codigo para el pie de pagina de la pagina principal
-	-->	
+
 	<footer>
+			<!-- 
+				Autor: Stephanie Santana
+				Fecha 09/10/21
+				Desc: Pie de página "estatico" con hipervinculo a las redes sociales
+			-->
 		<br/>
 		<br/>
 		<div class="contenedor">

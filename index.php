@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-<!--
-#Autor: Luis Jair
-#Fecha: Junio 2021
-# Pagina principal de acceso de SOS-MEX
--->
 <head>
 	<title>SOS-MEX</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<!-- Autor: Stephanie Santana
+	Fecha: 09/10/21
+	Desc: Se mandan a llamar las paginas de estilo .css -->
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/estilos.css">
 		<link rel="stylesheet" href="css/estilo.css">
@@ -16,17 +14,22 @@
 </head>
 
 <body>
-	<!--
-	#Autor: Stephanie
-	#Fecha: Junio 2021
-	# Programacion de la barra de navegacion superior
-	-->	
 	<header>
 		<div class="contenedor">
+			<!-- 
+					Autor: Stephanie Santana
+					Fecha 09/10/21
+					Desc:Barra "estatica" de las interfaces con logo e hipervinculos
+					incluye la class "navegadores"
+				 -->
 			<h1 class="" class="icon-eye"> SOS-MEX </h1> <h1 style="color: #333">. . . .</h1>
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"  style="color: #FFFFFF"></label>
-
+				<!-- 
+					Autor: Stephanie Santana
+					Fecha 09/10/21
+					Desc: Menu despleable de 3 barras horizontales con hipervinculos
+				 -->
 					<nav class="menu">
 						<a href="index.php">Inicio</a>
 						<a target="_blank" href="https://www.facebook.com/Sos-Mex-100416508942788">Facebook</a>
@@ -51,16 +54,15 @@
 				                </li>
 				        </ul>
 		        	</div>   
+		       
+			       
 				</nav>
 		    </div>	
 		</div>
 
 	</header>
-	<!--
-	#Autor: Stephanie
-	#Fecha: Junio 2021
-	# Programacion del banner y de las principales acciones de la pagina para brigadistas y usuarios 
-	-->	
+
+
 	<main>
 		<section id="banner">
 		<img src="img/banner.jpg">
@@ -78,6 +80,14 @@
 		</section>
 
 		<section id="blog">
+			<!-- 
+					Autor: Stephanie Santana
+					Fecha 09/10/21
+					Desc: Segunda sección hipervinculos para navegar según el tipo de usuario
+							Principal -> Login.php los lleva a la interfaz para verificar usuario
+							Secundario -> curp.php va a la interfaz para ingresar el curp
+							Chatbotu.php -> Es el chatbot para los usuarios secundarios
+				 -->
 			<h2>Has clic en donde desees</h2>
 			<div class="contenedor">
 				<article>
@@ -101,6 +111,11 @@
 		</section>
 
 	<section id="info">
+		<!-- 
+					Autor: Stephanie Santana
+					Fecha 09/10/21
+					Desc: Carrusel de imagenes
+				 -->
 			<h3 style="color: #FFD6B8; font-family: Lucida Bright">Estos son los valores por los cuales se rigue esta página web para ayudarte a localizar a tu ser querido ante cualquier catastrofe <i>Pericia, Valentia, Honor y Valor</i> </h3>
 		<div class="contrainer">
             <div class="row">
@@ -108,19 +123,19 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/topos1.jpg" class="d-block w-100" alt="bootstrap" width="600px" height="450px">
+                                <img src="img/topos1.jpg" class="d-block w-100" alt="bootstrap" width="500px" height="450px">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/topos2.jpg" class="d-block w-100" alt="..." width="600px" height="450px">
+                                <img src="img/topos2.jpg" class="d-block w-100" alt="..." width="500px" height="450px">
                             </div>
                             <div class="carousel-item">
-                                    <img src="img/topos3.jpg" class="d-block w-100" alt="..." width="600px" height="450px">
+                                    <img src="img/topos3.jpg" class="d-block w-100" alt="..." width="500px" height="450px">
                             </div>
                             <div class="carousel-item">
-                                    <img src="img/topos4.jpg" class="d-block w-100" alt="..." width="600px" height="450px">
+                                    <img src="img/topos4.jpg" class="d-block w-100" alt="..." width="500px" height="450px">
                             </div>
                             <div class="carousel-item">
-                                    <img src="img/topos5.jpg" class="d-block w-100" alt="..." width="600px" height="450px">
+                                    <img src="img/topos5.jpg" class="d-block w-100" alt="..." width="500px" height="450px">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -135,24 +150,27 @@
                 </div>
             </div>										
 		</div>
-	<!--
-	#Autor: Evelyn
-	#Fecha: Junio 2021
-	# Codigo para hacer funcionar la plantilla de Bootstrap (Carrusel de imagenes)
-	-->	
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!-- 
+					Autor: Stephanie Santana
+					Fecha 09/10/21
+					Desc: Script para el carrusel
+				 -->
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 	</section>
+
 	</main>
 
 	<SECTION id= "REDES">
-	<!--
-	#Autor: Evelyn
-	#Fecha: Junio 2021
-	# Codigo para el pie de pagina de la pagina principal
-	-->	
+
 	<footer>
+		<!-- 
+					Autor: Stephanie Santana
+					Fecha 09/10/21
+					Desc: Pie de página "estático" hipervinculos a redes sociales
+				 -->
 		<div class="contenedor">
 			<p class="copy">SOS-MEX &copy; 2021</p>
 			<div class="sociales">
@@ -164,5 +182,8 @@
 	</footer>
 
 </SECTION>
+
+
+
 </body>
 </html>

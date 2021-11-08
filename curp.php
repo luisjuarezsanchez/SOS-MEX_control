@@ -4,10 +4,14 @@
 	<title>verificacion_usuario</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<!-- 
+		Autor: Stephanie Santana
+		Fecha 08/11/21
+		Desc: Estilos a utilizar en la interfaz
+	-->
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<style type="text/css">
-
 
         h2 {
             color: #FF6600;
@@ -34,6 +38,12 @@
 <body>
 	<header>
 		<div class="contenedor">
+			<!-- 
+				Autor: Stephanie Santana
+				Fecha 08/11/21
+				Desc: Barra estatica con logo y el menu de 3 lineas horizontales desplegable 
+				con hipervinculos a las redes sociales
+			-->
 			<h1 class="icon-eye">SOS-MEX</h1>
 			<input type="checkbox" id="menu-bar">
 			<label class="icon-menu" for="menu-bar"></label>
@@ -66,15 +76,26 @@
 				<img src="img/identidad.png" width="400" height="250"/a>
 					<form> 
 						<br><h5>Ingresa tu curp</h5> <br>
+						<!-- 
+							Autor: Stephanie Santana
+							Fecha 08/11/21
+							Desc: Acceso a la página del gobirno para que el ciudadano verifique su identidad
+						-->
 						<a  target="_blank" href="https://www.gob.mx/curp/">Consultar CURP</a> <br> <br>
 
 						<input type="text" id="curp_input" oninput="validarInput(this)" style="width:100%;" placeholder="Ingrese su CURP">
-						<pre id="resultado"></pre>				 -->
+						<pre id="resultado"></pre>	-->			
 						
 					</form>
 					<script type="text/javascript">
-						function validarInput(input) {
-							var curp = input.value.toUpperCase(),
+//						function validarInput(input) {
+							/*
+								Autor: Stephanie Santana
+								Fecha 08/11/21
+								Desc: Aqui se ve la función utilizada para el CURP, por cuestiones de 
+								sesuridad y optimización todo este c´´odigo fue desplazado a validarcurp.php
+							*/
+/*								 var curp = input.value.toUpperCase(),
 						    	resultado = document.getElementById("resultado"),
 						        valido = "No válido";
 						        
@@ -91,7 +112,12 @@
 						}
 
 						function curpValida(curp) {
-							var re = /^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0\d|1[0-2])(?:[0-2]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$/,
+							/*
+								Autor: Stephanie Santana
+								Fecha 08/11/21
+								Desc: Formato de la CURP 
+							*/	
+/*							var re = /^([A-Z][AEIOUX][A-Z]{2}\d{2}(?:0\d|1[0-2])(?:[0-2]\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[										FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[SL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\d])(\d)$/,
 						    	validado = curp.match(re);
 							
 						    if (!validado)  //Coincide con el formato general?
@@ -103,7 +129,6 @@
 						        var diccionario  = "0123456789ABCDEFGHIJKLMNÑOPQRSTUVWXYZ",
 						            lngSuma      = 0.0,
 						            lngDigito    = 0.0;
-
 						        for(var i=0; i<17; i++)
 						            lngSuma= lngSuma + diccionario.indexOf(curp17.charAt(i)) * (18 - i);
 						        lngDigito = 10 - lngSuma % 10;
@@ -114,10 +139,10 @@
 						    if (validado[2] != digitoVerificador(validado[1])) 
 						    	return false;
 						        
-							return true; //Validados
+							return true; //Validado
 						}
 
-					</script>
+*/					</script>
 
 			</div>
 		</section>
@@ -126,6 +151,11 @@
 	</main>
 
 	<footer>
+		<!-- 
+			Autor: Stephanie Santana
+			Fecha 08/11/21
+			Desc: Pie de página "estatico" con hipervinculo a las redes sociales
+		-->
 		<br/>
 		<br/>
 		<div class="contenedor">

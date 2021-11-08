@@ -1,7 +1,12 @@
 <?php
-	#Autor: Stephanie
-	#Fecha: Junio 2021
-	# Codigo PHP que lleva acabo el proceso de modificacion del formulario situado en modificar.php
+	/*
+		Autor: Stephanie Santana
+		Fecha 12/10/21
+		Desc: Se hace conexión a la bd 
+			  Se identifica el id en el qual se realizan las modificaciones
+			  Se traen los dato de la interfaz modificar.php -> se volveran a 
+			  subir todos los datos e imagenes 
+	*/
 	include("db.php");
 	$id = $_REQUEST['id'];
 
@@ -16,6 +21,12 @@
 
 	$query = "UPDATE tabla_imagen SET nombre='$nombre',apellidos='$apellidos', estadom='$estadom', lugar='$lugar', hospital='$hospital', imagen1='$imagen1', imagen2='$imagen2', imagen3='$imagen3' WHERE id = '$id'";
 
+	/*
+		Autor: Stephanie Santana
+		Fecha 12/10/21
+		Desc: Actualiza los datos de BD y la interfaz
+		Muestra una ventana de la acción exitos del usuario
+	*/
 	$resultado = $conexion->query($query);
 
 	if($resultado){
