@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<style type="text/css">
 
+
         h2 {
             color: #FF6600;
             text-align: center;
@@ -102,6 +103,7 @@
 						        var diccionario  = "0123456789ABCDEFGHIJKLMNÑOPQRSTUVWXYZ",
 						            lngSuma      = 0.0,
 						            lngDigito    = 0.0;
+
 						        for(var i=0; i<17; i++)
 						            lngSuma= lngSuma + diccionario.indexOf(curp17.charAt(i)) * (18 - i);
 						        lngDigito = 10 - lngSuma % 10;
@@ -112,7 +114,7 @@
 						    if (validado[2] != digitoVerificador(validado[1])) 
 						    	return false;
 						        
-							return true; //Validado
+							return true; //Validados
 						}
 
 					</script>
