@@ -2,7 +2,7 @@ import cv2
 import os
 import imutils
 personName = 'IA'
-dataPath = 'C:/xampp/htdocs/SOS-MEX_EU2vfinal/Nueva IA'
+dataPath = 'C:/xampp/htdocs/SOS-MEX_control/Nueva IA'
 personPath = dataPath + '/' + personName
 if not os.path.exists(personPath):
     print('Carpeta creada: ',personPath)
