@@ -1,0 +1,35 @@
+body{
+	background-color: #6332432;
+	font-family: Arial;
+}
+#main-container{
+	margin: 60px auto;
+	width: 1330px;
+}
+
+table{
+	width: 10%;
+	background-color: white;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding 20px;
+}
+
+thead{
+	background-color: #fcf75e; /*Color del encabezado de la tabla*/
+	border-bottom: solid 5px #0F362D
+	color:black;
+}
+
+tr:nth-child(even){
+	background-color: #ddd; /*Color de los numeros pares de la tabla*/
+}
+
+tr:hover td{
+	background-color: #fefbb3; /*Color con lo que se ilumina al poner el mouse encima*/
+	color:black;
+}

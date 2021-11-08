@@ -1,0 +1,23 @@
+#info {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px; 
+}
+
+#info .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.info-topos {
+	margin: 20px;
+}
+
+.info-topos img{
+	width: 180px:
+	height: 180px;
+	border-radius: 50%;
+	border: 7px solid #fff;
+}
