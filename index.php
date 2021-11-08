@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!--
+#Autor: Luis Jair
+#Fecha: Junio 2021
+# Pagina principal de acceso de SOS-MEX
+-->
 <head>
 	<title>SOS-MEX</title>
 	<meta charset="utf-8">
@@ -11,6 +16,11 @@
 </head>
 
 <body>
+	<!--
+	#Autor: Stephanie
+	#Fecha: Junio 2021
+	# Programacion de la barra de navegacion superior
+	-->	
 	<header>
 		<div class="contenedor">
 			<h1 class="" class="icon-eye"> SOS-MEX </h1> <h1 style="color: #333">. . . .</h1>
@@ -41,15 +51,16 @@
 				                </li>
 				        </ul>
 		        	</div>   
-		       
-			       
 				</nav>
 		    </div>	
 		</div>
 
 	</header>
-
-
+	<!--
+	#Autor: Stephanie
+	#Fecha: Junio 2021
+	# Programacion del banner y de las principales acciones de la pagina para brigadistas y usuarios 
+	-->	
 	<main>
 		<section id="banner">
 		<img src="img/banner.jpg">
@@ -124,17 +135,23 @@
                 </div>
             </div>										
 		</div>
-
-			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<!--
+	#Autor: Evelyn
+	#Fecha: Junio 2021
+	# Codigo para hacer funcionar la plantilla de Bootstrap (Carrusel de imagenes)
+	-->	
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
 	</section>
-
 	</main>
 
 	<SECTION id= "REDES">
-
+	<!--
+	#Autor: Evelyn
+	#Fecha: Junio 2021
+	# Codigo para el pie de pagina de la pagina principal
+	-->	
 	<footer>
 		<div class="contenedor">
 			<p class="copy">SOS-MEX &copy; 2021</p>
@@ -147,8 +164,5 @@
 	</footer>
 
 </SECTION>
-
-
-
 </body>
 </html>

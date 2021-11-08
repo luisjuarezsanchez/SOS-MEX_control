@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!--
+#Autor: Evelyn
+#Fecha: Junio 2021
+# Pagina principal que muestra la interfaz de los brigadistas una vez que han iniciado sesion con sus credenciales de acceso
+-->
 <head>
 	<title>Busqueda</title>
 	<meta charset="utf-8">
@@ -28,8 +33,11 @@
 		<br/>
 		<br/>
 		<br/>
-
-
+		 <!--
+		#Autor: Luis Jair
+		#Fecha: Junio 2021
+		# Acciones para brigadistas, unicamente se coloca la ruta de acceso de cada uno de los PHP correspondientes segun su imagen y accion
+		-->
 		<section id="bienvenidos">
 			<br/>
 			<br/>
@@ -56,10 +64,12 @@
 				</article>				
 			</div>
 		</section>
-
-		
 	</main>
-
+	<!--
+	#Autor: Evelyn
+	#Fecha: Junio 2021
+	# Codigo para el pie de pagina de la pagina principal
+	-->	
 	<footer>
 		<br/>
 		<br/>

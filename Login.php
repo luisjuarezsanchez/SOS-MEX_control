@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!--
+#Autor: Stephanie
+#Fecha: Junio 2021
+# Interfaz de la pagina que contiene un formulario de validacion de brigadistas, aqui se emplea el metodo POST para el envio de informacion
+-->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
@@ -22,7 +27,11 @@
 			</nav>
 		</div>
 	</header>
-
+	<!--
+	#Autor: Stephanie
+	#Fecha: Junio 2021
+	#Programacion del formulario, invicacion del metodo POST para su respectiva validacion en validar.php
+	-->
 	<section class="form-login">
 		<form action="validar.php" method="post">
 			<h5>Iniciar sesión como brigadista</h5>
@@ -33,8 +42,11 @@
 			<p><a href="mailto:SOSxMEX@gmail.com">¿Olvidaste tu contraseña?</a></p>
 		</form>
 	</section>
-
-
+	<!--
+	#Autor: Evelyn
+	#Fecha: Junio 2021
+	# Codigo para el pie de pagina de la pagina principal
+	-->	
 		<footer>
 			<br/>
 			<br/>
@@ -48,6 +60,5 @@
 			</div>
 		</div>
 	</footer>
-
 </body>
 </html>

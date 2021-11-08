@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!--
+#Autor: Stephanie
+#Fecha: Junio 2021
+# Interfaz de la pagina que contiene un formulario de validacion de brigadistas, aqui se emplea el metodo POST para el envio de informacion
+-->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">

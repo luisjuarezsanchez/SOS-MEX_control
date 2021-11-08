@@ -1,4 +1,7 @@
 <?php
+#Autor: Luis Jair
+#Fecha: Junio 2021
+# Codigo PHP que lleva acabo la validacion de las credenciales de acceso del formulario de inicio de sesion para brigadistas, controla si segun los datos proporiconados se puede o no acceder a la interfaz de brigadistas
 $usuario=$_POST['usuario'];
 $contrasena=$_POST['contrasena'];
 session_start();

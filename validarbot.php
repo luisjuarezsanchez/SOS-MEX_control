@@ -1,4 +1,7 @@
 <?php
+#Autor: Luis Jair
+#Fecha: Junio 2021
+# Codigo PHP que lleva acabo la validacion de las credenciales de acceso del formulario de inicio de sesion para brigadistas, para acceder al Bot de brigadistas
 $usuario=$_POST['usuario'];
 $contrasena=$_POST['contrasena'];
 session_start();

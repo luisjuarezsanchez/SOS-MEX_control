@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!--
+#Autor: Stephanie
+#Fecha: Junio 2021
+# Interfaz de registro para dar de alta a pacientes
+-->
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
@@ -24,6 +29,11 @@
 	</header>
 
 	<section class="form-login">
+		<!--
+		#Autor: Stephanie
+		#Fecha: Junio 2021
+		# Estructuracion del formulario que emplea el metodo POST para el envio de informacion invocando al archivo de alta.php, se colocan las respectivas expresiones regulares que validan la cadena que se introduce en el campo correspondiente
+		-->
 		<center>
 		<form action="alta.php" method="POST" enctype="multipart/form-data"> 
 		<h5>Llena los datos correspondientes</h5>
@@ -40,22 +50,19 @@
 		<input class=controls type="file" REQUIRED name="imagen1" accept="image/png, image/jpeg">
 		<input class=controls type="file" REQUIRED name="imagen2" accept="image/png, image/jpeg">
 		<input class=controls type="file" REQUIRED name="imagen3" accept="image/png, image/jpeg">
-
 		<input class="buttons" type="submit" name="b_alta" value="Dar de alta">
 		<input class="buttons" type="reset" name="borrar" value="Vaciar campos">
 		<a href="Busqueda_fotografias.php"><input class="buttons" type="button" name="registros" value="Ver registros">
-
 		</form>
 		</center>
-
-
-
 	</section>
-
-
+	<!--
+	#Autor: Evelyn
+	#Fecha: Junio 2021
+	# Codigo para el pie de pagina de la pagina principal
+	-->	
 		<footer>
 			<br/>
-
 		<div class="contenedor">
 			<p class="copy">SOS-MEX &copy; 2021</p>
 			<div class="sociales">
@@ -65,7 +72,5 @@
 			</div>
 		</div>
 	</footer>
-	
-
 </body>
 </html>

@@ -1,5 +1,7 @@
 <?php
-
+	#Autor: Stephanie
+	#Fecha: Junio 2021
+	# Codigo PHP que lleva acabo el proceso de modificacion del formulario situado en modificar.php
 	include("db.php");
 	$id = $_REQUEST['id'];
 
